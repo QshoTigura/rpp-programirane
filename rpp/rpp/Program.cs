@@ -15,6 +15,9 @@ namespace rpp
             Console.WriteLine(nastroiki.CountLess100(arr));
             Console.WriteLine(nastroiki.MaxNum(arr));
             arr = nastroiki.ReverseArr(arr);
+            nastroiki.ChetniChisla(arr);
+            Console.WriteLine(nastroiki.BroiChetniChisla(arr));
+            Console.WriteLine(nastroiki.SumaNaChetniChisla(arr));
             nastroiki.PrintArr(arr);
 
         }
