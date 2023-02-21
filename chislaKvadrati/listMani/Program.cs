@@ -19,7 +19,9 @@ namespace listMani
                 }
                 switch (com)
                 {
-                    case "add":
+                    case "add": var n = int.Parse(input[1]);
+                        var e = int.Parse(input[2]);
+                        nums.Insert(n, e);
                         break;
                     case "addMany":
                         break;
@@ -35,6 +37,7 @@ namespace listMani
                         break;
                 }
             }
+            Console.WriteLine(string.Join(" ",nums));
         }
     }
 }
