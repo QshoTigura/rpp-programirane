@@ -17,13 +17,19 @@ namespace listMani
                 {
                     break;
                 }
+                int n = 0;
                 switch (com)
                 {
-                    case "add": var n = int.Parse(input[1]);
+                    case "add":  n = int.Parse(input[1]);
                         var e = int.Parse(input[2]);
                         nums.Insert(n, e);
                         break;
-                    case "addMany":
+                    case "addMany":  n = int.Parse(input[1]);
+                        for (int i = input.Length-1; i >1; i--)
+                        {
+                            e = int.Parse(input[i]);
+                            nums.Insert(n, e);
+                        }
                         break;
                     case "contains":
                         break;
