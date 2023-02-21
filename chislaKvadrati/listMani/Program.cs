@@ -25,7 +25,7 @@ namespace listMani
                         nums.Insert(n, e);
                         break;
                     case "addMany":  n = int.Parse(input[1]);
-                        for (int i = input.Length-1; i >1; i--)
+                        for (int i = input.Length-1; i > 1; i--)
                         {
                             e = int.Parse(input[i]);
                             nums.Insert(n, e);
