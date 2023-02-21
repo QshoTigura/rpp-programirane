@@ -11,7 +11,7 @@ namespace chislaKvadrati
             List<int> nums = Console.ReadLine().Split().Select(int.Parse).ToList();
             var result = nums.Where(x => Math.Sqrt(x) == (int)Math.Sqrt(x)).ToList();
             Console.WriteLine(string.Join(" ",result));
-            
+            hfy
         }
     }
 }
